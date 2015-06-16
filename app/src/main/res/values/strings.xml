@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ArticleReader</string>
+    <string name="action_settings">Settings</string>
+    <string name="checkbox_favorite">Любимые</string>
+    <string name="favorites">Любимые</string>
+    <string name="listview_caption">Лист</string>
+    <string name="listviewex_caption">Експандбл</string>
+</resources>
