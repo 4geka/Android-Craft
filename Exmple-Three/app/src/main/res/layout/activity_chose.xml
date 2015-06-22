@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <Button
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff90ff21"
+        android:textColor="@color/primary_text"
+        android:text="@string/first_fragment"/>
+    <Button
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff90ff21"
+        android:textColor="@color/primary_text"
+        android:text="@string/second_fragment"
+        android:layout_weight="0.05" />
+    <Button
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff90ff21"
+        android:textColor="@color/primary_text"
+        android:text="@string/third_fragment"
+        android:layout_weight="0.02" />
+    <Button
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/fourth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff90ff21"
+        android:textColor="@color/primary_text"
+        android:text="@string/fourth_fragment"
+        android:layout_weight="0.04" />
+    <Button
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/fifth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff90ff21"
+        android:textColor="@color/primary_text"
+        android:text="@string/fifth_fragment"
+        android:layout_weight="0.04" />
+
+</LinearLayout>

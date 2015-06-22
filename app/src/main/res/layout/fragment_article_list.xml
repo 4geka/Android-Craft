@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <Spinner
+        android:id="@+id/list_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinners"/>
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/refresh"
+            android:background="@android:color/transparent" />
+        <EditText
+            android:id="@+id/filter"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_rounded_all"
+            android:text="Поиск"
+            android:textColor="#ff7c7c7c" />
+        <ImageButton
+            android:id="@+id/start_filter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_search"
+            android:background="@android:color/transparent" />
+
+
+    </LinearLayout>
+    <TextView
+        android:text="@string/filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/only_my"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:id="@+id/switch_only_my"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/add_new_article"
+        android:text="@string/add_new_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff994cbb"
+        android:textColor="#ffffffff" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ExpandableListView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/exp_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+        <ListView
+            android:id="@+id/def_list"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:background="@drawable/separator"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

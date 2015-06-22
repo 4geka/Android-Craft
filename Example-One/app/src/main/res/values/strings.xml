@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Назад</string>
+    <string name="cross_activity">1</string>
+    <string name="android_fragment">Второй</string>
+    <string name="android">Третий</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="scale_names">
+        <item>none</item>
+        <item>Масштаб</item>
+        <item>Центр</item>
+        <item>Низ</item>
+        <item>Верх</item>
+        <item>Лево-Верх</item>
+        <item>Дефолт</item>
+        <item>Центр с инсайдом</item>
+    </string-array>
+    <string-array name="scale_values">
+        <item>FIT_XY</item>
+        <item>CENTER_CROP</item>
+        <item>CENTER</item>
+        <item>FIT_END</item>
+        <item>FIT_START</item>
+        <item>MATRIX</item>
+        <item>FIT_CENTER</item>
+        <item>CENTER_INSIDE</item>
+    </string-array>
+</resources>

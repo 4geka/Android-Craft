@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ExampleThree</string>
+    <string name="set_null">Обнулить</string>
+    <string name="set_clear">Очистить</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Настройки</string>
+    <string name="chose_activity">Выбор фрагмента</string>
+    <string name="first_fragment">Первый фрагмент</string>
+    <string name="second_fragment">Второй фрагмент</string>
+    <string name="third_fragment">Третий фрагмент</string>
+    <string name="fourth_fragment">Четвертый фрагмент</string>
+    <string name="fifth_fragment">Пятый фрагмент</string>
+    <string name="id_container">id_container</string>
+    <string name="id_fragment">id_fragment</string>
+</resources>

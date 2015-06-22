@@ -1,8 +1,23 @@
 <resources>
-    <string name="app_name">ArticleReader</string>
+    <string name="app_name">Редактор статей</string>
+    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="checkbox_favorite">Любимые</string>
     <string name="favorites">Любимые</string>
     <string name="listview_caption">Лист</string>
     <string name="listviewex_caption">Експандбл</string>
+    <string name="view_article">Просмотр</string>
+    <string name="edit_article">Редактировать</string>
+    <string name="filters">Фильтры</string>
+    <string name="only_my">Только мои</string>
+    <string name="add_new_article">Создать новую статью</string>
+    <string name="save">Сохранить статью</string>
+    <string name="search_hint">Поиск</string>
+    <string name="need_published">Опубликовать?</string>
+    <string name="published">Публикация</string>
+
+    <string-array name="spinners">
+        <item>Expandable</item>
+        <item>Стандарт</item>
+    </string-array>
 </resources>

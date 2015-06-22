@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ExampleTwo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start">Старт</string>
+    <string name="one_fragment">1</string>
+    <string name="title_activity_second">Назад</string>
+    <string name="two_fragment">2</string>
+    <string name="over">Закрыть</string>
+
+    <string-array name="scale_names">
+        <item>По родителю</item>
+        <item>Масштаб</item>
+        <item>Центр</item>
+        <item>Низ</item>
+        <item>Верх</item>
+        <item>Лево-Верх</item>
+        <item>Дефолт</item>
+        <item>Центр с инсайдом</item>
+    </string-array>
+    <string-array name="scale_values">
+        <item>FIT_XY</item>
+        <item>CENTER_CROP</item>
+        <item>CENTER</item>
+        <item>FIT_END</item>
+        <item>FIT_START</item>
+        <item>MATRIX</item>
+        <item>FIT_CENTER</item>
+        <item>CENTER_INSIDE</item>
+    </string-array>
+</resources>

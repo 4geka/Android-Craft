@@ -1,0 +1,25 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@color/primary_light"
+    android:id="@+id/fon">
+    <TextView
+        android:id="@+id/timer"
+        android:text="@string/set_clear"
+        android:textSize="25sp"
+        android:textColor="#ffff870c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/our_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pic1">
+
+    </ImageView>
+</LinearLayout>
