@@ -204,8 +204,10 @@ public class ArticleReaderFragment extends Fragment implements IActtivityInterac
                 ARTICLES_COLUMN_OWN};
         Cursor cursor = getActivity().getContentResolver().query(uri, projection, null, null,
                 null);
-        if (cursor.moveToFirst())
+        if (cursor != null)
         {
+            cursor.moveToFirst();
+
             textTitle.setText(cursor.getString(cursor
                     .getColumnIndexOrThrow(COLUMN_TITLE)));
             textDescription.setText(cursor.getString(cursor
