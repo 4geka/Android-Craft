@@ -11,7 +11,8 @@ import ergo_proxy.articlereader.ui.utils.IDetailsFragmentInteraction;
 import ergo_proxy.articlereader.ui.db.ArticleItem;
 
 
-public class ArticleReaderActivity extends BaseActivity
+public class ArticleReaderActivity extends BaseActivity implements IActtivityInteractionListener,
+        IDetailsFragmentInteraction
 {
 	public static final String LIST_FRAGMENT = "list_fragment";
 	public static final String ARTICLE_FRAGMENT = "article_fragment";
