@@ -15,6 +15,9 @@
     <string name="search_hint">Поиск</string>
     <string name="need_published">Опубликовать?</string>
     <string name="published">Публикация</string>
+    <string name="warning_edit">Ошибка редактирования</string>
+    <string name="select_picture">Выбрать изображение</string>
+    <string name="warning_delete">Ошибка удаления</string>
 
     <string-array name="spinners">
         <item>Expandable</item>

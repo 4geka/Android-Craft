@@ -2,6 +2,7 @@ package ergo_proxy.articlereader.ui.activity;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import ergo_proxy.articlereader.R;
 import ergo_proxy.articlereader.ui.fragments.ArticleReaderFragment;
@@ -12,7 +13,7 @@ import ergo_proxy.articlereader.ui.db.ArticleItem;
 
 
 public class ArticleReaderActivity extends FragmentActivity implements IActtivityInteractionListener,
-        IDetailsFragmentInteraction
+		IDetailsFragmentInteraction
 {
 	public static final String LIST_FRAGMENT = "list_fragment";
 	public static final String ARTICLE_FRAGMENT = "article_fragment";
@@ -51,15 +52,17 @@ public class ArticleReaderActivity extends FragmentActivity implements IActtivit
 	@Override
 	public void updateArticleItem(ArticleItem articleItem)
 	{
-		IDetailsFragmentInteraction iClickListener=
-				(IDetailsFragmentInteraction)getSupportFragmentManager().
-						findFragmentByTag(LIST_FRAGMENT);
-		iClickListener.updateArticleItem(articleItem);
+
 	}
 
 	@Override
-	public void addArticleItem(Uri articleItem)
+	public void addArticleItem()
 	{
-
+		IDetailsFragmentInteraction iClickListener=
+				(IDetailsFragmentInteraction)getSupportFragmentManager().
+						findFragmentByTag(LIST_FRAGMENT);
+		iClickListener.addArticleItem();
 	}
+
+
 }

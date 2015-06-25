@@ -1,5 +1,6 @@
 package ergo_proxy.articlereader.ui.adapters;
 
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,30 +16,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by ergo_proxy on 19.06.15.
+ * Created by ergo_proxy on 18.06.15.
  */
 
 public class ListExAdapter extends BaseExpandableListAdapter
 {
-    private List<ArticlesGroupItems> articlesGroupItemsList = new ArrayList<>();
+
+    private List<ArticlesGroupItems> groupItemList = new ArrayList<>();
     private List<ArticleItem> articleItemList = new ArrayList<>();
     private List<List<ArticleItem>> arrayGroupsAndArticles=new ArrayList<>();
     private LayoutInflater inflater;
     private Context mContext;
 
-    public ListExAdapter(Context context, List<ArticlesGroupItems> groups, List<ArticleItem> articles)
+    public ListExAdapter(Context context,List<ArticlesGroupItems> groups,List<ArticleItem> articles)
     {
         mContext = context;
-        articlesGroupItemsList = groups;
-        articleItemList = articles;
-        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        groupItemList = groups;
+        articleItemList=articles;
+        inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         connectGroupsWithArticles(groups, articles);
     }
 
     @Override
     public int getGroupCount()
     {
-        return articlesGroupItemsList.size();
+        return groupItemList.size();
     }
 
     @Override
@@ -49,8 +51,9 @@ public class ListExAdapter extends BaseExpandableListAdapter
 
     @Override
     public Object getGroup(int groupPosition)
+
     {
-        return articlesGroupItemsList.get(groupPosition);
+        return groupItemList.get(groupPosition);
     }
 
     @Override
@@ -88,7 +91,7 @@ public class ListExAdapter extends BaseExpandableListAdapter
         }
 
         TextView textGroup = (TextView) convertView.findViewById(R.id.textGroup);
-        textGroup.setText(articlesGroupItemsList.get(groupPosition).getmTitle());
+        textGroup.setText(groupItemList.get(groupPosition).getmTitle());
 
         return convertView;
     }

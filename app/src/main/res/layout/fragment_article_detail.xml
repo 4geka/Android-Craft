@@ -106,20 +106,8 @@
                     android:minHeight="150dp"
 
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/no_image" />
-                <android.support.design.widget.FloatingActionButton
-                    app:fabSize="mini"
-
-                    android:id="@+id/floatingButtonAddImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    app:elevation="4dp"
-                    app:borderWidth="0dp"
-                    android:layout_alignTop="@+id/imageViewThumb"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:src="@drawable/ic_add_article" />
+                    android:baselineAlignBottom="false"
+                    android:src="@drawable/no_image" />
 
             </RelativeLayout>
     </LinearLayout>

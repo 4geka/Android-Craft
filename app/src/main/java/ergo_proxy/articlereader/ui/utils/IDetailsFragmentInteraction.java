@@ -11,5 +11,6 @@ import ergo_proxy.articlereader.ui.db.ArticleItem;
 public interface IDetailsFragmentInteraction {
     void deleteArticleItem(ArticleItem articleItem);
     void updateArticleItem(ArticleItem articleItem);
-    void addArticleItem(Uri articleItem);
+   /* void addArticleItem(Uri articleItem);*/
+    void addArticleItem();
 }
